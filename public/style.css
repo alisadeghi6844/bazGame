@@ -1,0 +1,1016 @@
+@import "css/font.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: white;
+    font-family: IRANSans, "Segoe UI", sans-serif;
+    line-height: 1.7rem;
+    direction: rtl;
+    text-align: right;
+    overflow-x: hidden;
+    position: relative;
+}
+
+::selection {
+    background: #ffb320;
+    color: white
+}
+
+p {
+    font-family: IRANSans, "Segoe UI", sans-serif;
+    font-size: 1.2222rem;
+    line-height: 1.7rem;
+    color: #525252;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: dirooz-font, "Segoe UI", sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.9rem;
+    padding: 10px;
+    font-weight: 600;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#site {
+    width: 100%;
+    height: 100%;
+}
+
+/*wrapper*/
+#site .wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 99;
+    background: #343434;
+    opacity: 0.7;
+    display: none;
+}
+
+/*end wrapper*/
+/*loading*/
+#site #loaded {
+    width: 100%;
+    height: 100%;
+    background: #ffb320;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#site #loaded .loading {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-top: 10px solid #ff589e;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate-loading 2s linear infinite;
+}
+
+#site #loaded .loading span {
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+    font-family: pangolin, "Segoe UI", sans-serif;
+    animation: rotate-loading-span 2s linear infinite;
+}
+
+#site #loaded .loading::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-top: 10px solid white;
+    transform: rotate(120deg);
+}
+
+#site #loaded .loading::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-top: 10px solid yellow;
+    transform: rotate(-120deg);
+}
+
+@keyframes rotate-loading {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-loading-span {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+/*end loading*/
+/*style for header*/
+#site #header .header-box {
+    position: relative;
+    background: #131313;
+    z-index: 1;
+    clear: both;
+    padding: 20px 0;
+    border-bottom: 1px solid #ffb320;
+}
+
+#site #header .header-box .button-box .button button {
+    background: #ffb320;
+    border-radius: 30px;
+    padding: 7px 20px;
+    font-weight: 500;
+}
+
+#site #header .header-box .nav-box .nav-top-menu ul li:not(:first-child) {
+    margin-right: 25px;
+}
+
+#site #header .header-box .nav-box .nav-top-menu ul li a {
+    display: block;
+    padding: 7px 10px 4px;
+    font-family: dirooz-font, "Segoe UI", sans-serif;
+    font-size: 1.1rem;
+    color: white;
+    transition: all 0.3s;
+}
+
+#site #header .header-box .nav-box .nav-top-menu ul li a:hover {
+    color: #ffb320;
+}
+
+#site #header .header-box .img-box .img img {
+    position: relative;
+    margin-top: 7px;
+    left: 20px;
+}
+
+#site #header .header-box .nav-box .burger {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 20px;
+    right: 15px;
+    display: none;
+}
+
+#site #header .header-box .nav-box .burger .burger-menu {
+    cursor: pointer;
+}
+
+#site #header .header-box .nav-box .burger .burger-menu span {
+    width: 30px;
+    height: 3px;
+    background: #ffff;
+    display: block;
+    margin-bottom: 4px;
+}
+
+#site #header .header-box .nav-box .nav-top-slide-menu {
+    background: white;
+    position: absolute;
+    z-index: 999;
+    right: 50%;
+    top: 101%;
+    transform: translateX(50%);
+    width: 75%;
+    padding: 15px 0;
+    display: none;
+}
+
+#site #header .header-box .nav-box .nav-top-slide-menu ul li:not(:last-child) {
+    border-bottom: 1px solid #ececec;
+}
+
+#site #header .header-box .nav-box .nav-top-slide-menu ul li a {
+    display: block;
+    padding: 15px;
+    color: #131313;
+    font-family: dirooz-font, "Segoe UI", sans-serif;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+
+#site #header .header-box .nav-box .nav-top-slide-menu ul li a:hover {
+    color: #ffb320;
+}
+
+@media screen and (max-width: 1200px) {
+    #site #header .header-box .nav-box .nav-top-menu ul li {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #site #header .header-box .nav-box .nav-top-menu ul li {
+        margin-right: 0;
+    }
+
+    #site #header .header-box .button-box .button button {
+        background: #ffb320;
+        border-radius: 30px;
+        padding: 6px 10px;
+        font-weight: normal;
+    }
+
+    #site #header .header-box .nav-box .nav-top-menu ul li a {
+        padding: 5px 5px 2px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #site #header .header-box .button-box {
+        display: none;
+    }
+
+    #site #header .header-box .nav-box .nav-top-menu {
+        display: none;
+    }
+
+    #site #header .header-box .img-box .img {
+        text-align: left;
+        direction: ltr;
+    }
+
+    #site #header .header-box .img-box .img img {
+        left: 0;
+    }
+
+    #site #header .header-box .nav-box .burger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #site #header .header-box .nav-box .nav-top-slide-menu {
+        transform: translateX(0);
+        width: 100%;
+        right: 0;
+    }
+}
+
+/*end style for header*/
+
+
+/*style for main*/
+#site #main .top-slider {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#site #main .top-slider .slider {
+    display: none;
+}
+
+#site #main .top-slider .slider.active {
+    display: block;
+}
+
+#site #main .top-slider {
+    background: black;
+}
+
+#site #main .top-slider .slider-1 {
+    position: relative;
+    top: 0;
+    right: 0;
+    background: url("images/home-site/slider-1-min.jpg") top center;
+    background-size: cover;
+    height: 865px;
+    width: 100%;
+}
+
+#site #main .top-slider .slider-2 {
+    position: relative;
+    top: 0;
+    right: 0;
+    background: url("images/home-site/slider-2-min.jpg") top center;
+    background-size: cover;
+    height: 865px;
+    width: 100%;
+}
+
+#site #main .top-slider .slider .text {
+    position: absolute;
+    top: 33%;
+    right: 18%;
+}
+
+#site #main .top-slider .slider .text h1 {
+    color: #fff;
+    font-family: dirooz-font, "Segoe UI", sans-serif;
+    font-size: 3.4rem;
+    line-height: 4.4rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#site #main .top-slider .slider .text h1 span {
+    color: #ffb320;
+}
+
+#site #main .top-slider .slider .text .paragraph {
+    width: 65%;
+}
+
+#site #main .top-slider .slider .text .paragraph p {
+    font-family: IRANSans, "Segoe UI", sans-serif;
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+#site #main .top-slider .slider .text .paragraph button {
+    background: #ffb320;
+    border-radius: 30px;
+}
+
+#site #main .top-slider .slider .text .paragraph button a {
+    display: block;
+    text-decoration: none;
+    padding: 8px 18px;
+    font-family: dirooz-font, "Segoe UI", sans-serif;
+    font-size: 1.05rem;
+    color: #333;
+}
+
+#site #main .top-slider .buttons-change-slider {
+    position: absolute;
+    top: 80%;
+    right: 18%;
+    z-index: 5;
+}
+
+#site #main .top-slider .buttons-change-slider div {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 15px;
+    background: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.active-button-slider {
+    background: #ffb320 !important;
+}
+
+
+/*news box*/
+.news-box {
+    background: #131313;
+}
+
+.bigHeading {
+    background: #ffb320;
+    font-size: 1.5rem;
+    font-family: dirooz-font, "Segoe UI", sans-serif;
+    color: #fff;
+    padding: 18px 50px;
+    width: 101.6%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+}
+
+.text-update {
+    height: 72px;
+    padding: 15px;
+    background: #131313;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 102%;
+}
+
+.text-update p {
+    color: #fff;
+    position: absolute;
+    width: 200%;
+    margin: 0;
+    transform: translateX(0%);
+    animation: moving 22s linear infinite;
+    font-family: IRANSans, "Segoe UI", sans-serif;
+    font-size: 1.29rem;
+}
+
+.text-update p .text {
+    margin-right: 70px;
+}
+
+.text-update p .text .racing, .text-update p .text .new, .text-update p .text .action {
+    padding: 1px 20px;
+    margin-right: 10px;
+    font-size: 1.08rem;
+    letter-spacing: 2px;
+}
+
+.text-update p .text .racing {
+    background: #694eae;
+}
+
+.text-update p .text .new {
+    background: #ff205f;
+}
+
+.text-update p .text .action {
+    background: #4eae60;
+}
+
+@keyframes moving {
+    0% {
+        transform: translateX(-48%);
+    }
+    100% {
+        transform: translateX(75%);
+    }
+}
+
+@media screen and (max-width: 1410px) {
+    .text-update p {
+        width: 300%;
+        animation: moving 19s linear infinite;
+    }
+
+    @keyframes moving {
+        0% {
+            transform: translateX(-30%);
+        }
+        100% {
+            transform: translateX(60%);
+        }
+    }
+    .bigHeading {
+        width: 102%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .bigHeading {
+        width: 103%;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .bigHeading {
+        font-size: 1.3rem;
+        padding: 18px 20px;
+        width: 103.2%;
+    }
+
+    .text-update p {
+        animation: moving 17s linear infinite;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #site #main .top-slider .slider .text {
+        right: 5%;
+    }
+
+    .text-update {
+        width: 103%;
+    }
+
+    #site #main .top-slider .slider .text h1 {
+        font-size: 2.8rem;
+        line-height: 3.8rem;
+    }
+
+    #site #main .top-slider .slider .text .paragraph p {
+        font-size: 1.2rem;
+    }
+
+    #site #main .top-slider .slider .text .paragraph button a {
+        padding: 5px 15px;
+        font-size: 1rem;
+    }
+
+    #site #main .top-slider .buttons-change-slider {
+        right: 5%;
+    }
+
+    #site #main .top-slider .buttons-change-slider div {
+        width: 33px;
+        height: 33px;
+    }
+
+    @keyframes moving {
+        0% {
+            transform: translateX(-30%);
+        }
+        100% {
+            transform: translateX(90%);
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .text-update p {
+        width: 400%;
+    }
+
+    @keyframes moving {
+        0% {
+            transform: translateX(-20%);
+        }
+        100% {
+            transform: translateX(75%);
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #site #main .top-slider .slider-1, #site #main .top-slider .slider-2 {
+        height: 700px;
+    }
+
+    .bigHeading {
+        width: 104%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .bigHeading {
+        width: 105%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .bigHeading {
+        font-size: 1.1rem;
+        padding: 18px 10px;
+        width: 104%;
+    }
+
+    #site #main .top-slider .slider .text h1 {
+        font-size: 2.4rem;
+        line-height: 3.4rem;
+        margin-bottom: 10px;
+    }
+
+    #site #main .top-slider .slider .text .paragraph p {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+    }
+
+    #site #main .top-slider .slider .text .paragraph button a {
+        padding: 3px 10px;
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .text-update p {
+        width: 500%;
+    }
+
+    @keyframes moving {
+        0% {
+            transform: translateX(-15%);
+        }
+        100% {
+            transform: translateX(75%);
+        }
+    }
+    .bigHeading {
+        width: 104.8%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .news-box .title {
+        display: none;
+    }
+
+    .text-update p {
+        animation: moving 22s linear infinite;
+    }
+
+    @keyframes moving {
+        0% {
+            transform: translateX(-15%);
+        }
+        100% {
+            transform: translateX(60%);
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    #site #main .top-slider .slider-1, #site #main .top-slider .slider-2 {
+        height: 600px;
+    }
+
+    #site #main .top-slider .slider .text h1 {
+        font-size: 2.1rem;
+        line-height: 3.1rem;
+        margin-bottom: 20px;
+    }
+
+    #site #main .top-slider .slider .text .paragraph {
+        width: 70%;
+    }
+
+    #site #main .top-slider .slider .text .paragraph p {
+        font-size: 1.2rem;
+        margin-bottom: 25px;
+    }
+
+    #site #main .top-slider .slider .text .paragraph button a {
+        padding: 2px 8px;
+    }
+
+    #site #main .top-slider .slider .text {
+        position: absolute;
+        top: 18%;
+    }
+
+    #site #main .top-slider .buttons-change-slider {
+        top: 88%;
+    }
+
+    .text-update p {
+        animation: moving 18s linear infinite;
+    }
+
+    @keyframes moving {
+        0% {
+            transform: translateX(-15%);
+        }
+        100% {
+            transform: translateX(100%);
+        }
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    .text-update p {
+        width: 700%;
+        animation: moving 20s linear infinite;
+    }
+
+    @keyframes moving {
+        0% {
+            transform: translateX(-15%);
+        }
+        100% {
+            transform: translateX(80%);
+        }
+    }
+    #site #main .top-slider .slider .text h1 {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+}
+
+/*end news box*/
+
+/*style for intro for games*/
+#site #main .intro-games {
+    background: #fff;
+    padding: 110px 0;
+}
+
+#site #main .intro-games .game {
+    height: 415px;
+    position: relative;
+    padding: 10px 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#site #main .intro-games .game::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.64);
+    top: 0;
+    right: 0;
+}
+
+#site #main .intro-games .game1 {
+    background: url("images/home-site/4-min.jpg") top center no-repeat;
+    background-size: cover;
+}
+
+#site #main .intro-games .game2 {
+    background: url("images/home-site/3-min.jpg") top center no-repeat;
+    background-size: cover;
+}
+
+#site #main .intro-games .game3 {
+    background: url("images/home-site/2-min.jpg") top center no-repeat;
+    background-size: cover;
+}
+
+#site #main .intro-games .game4 {
+    background: url("images/home-site/1-min.jpg") top center no-repeat;
+    background-size: cover;
+}
+
+#site #main .intro-games .game span.type {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    color: #fff;
+    z-index: 1;
+    padding: 4px 15px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+#site #main .intro-games .game1 span.type {
+    background: #694eae;
+}
+
+#site #main .intro-games .game2 span.type {
+    background: #ff205f;
+}
+
+#site #main .intro-games .game3 span.type {
+    background: #4eae60;
+}
+
+#site #main .intro-games .game4 span.type {
+    background: #ff205f;
+}
+
+#site #main .intro-games .game .text {
+    position: absolute;
+    z-index: 1;
+    width: 85%;
+    bottom: 40px;
+    right: 18px;
+}
+
+#site #main .intro-games .game .text h5 a {
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+}
+
+#site #main .intro-games .game .text p {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+#site #main .intro-games .game::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(43, 41, 41);
+    top: 100%;
+    right: 0;
+    z-index: 5;
+    transition: all 0.4s ease-out;
+    color: #e7e6e6;
+    display: flex;
+    padding: 40px 25px;
+    font-family: IRANSans, "Segoe UI", sans-serif;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+#site #main .intro-games .game1::before {
+    content: "فرنچایز Forza Horizon یکی از مشهورترین سری بازی‌های Racing آرکید است که توسط Playground Games توسعه داده شده است. این بازی محبوب به صورت انحصاری برای پلتفرم‌های مایکروسافت عرضه می‌شود و تجربه‌ای تکرار نشدنی از ماشین‌رانی را به طرفداران این سبک ارائه می‌دهد. Forza Horizon 4 آخرین نسخه‌ی منتشر شده از این سری است که Microsoft Studios آن را روانه‌ی بازار کرد.";
+}
+
+#site #main .intro-games .game2::before {
+    content: "PlayerUnknown’s Battlegrounds به‌صورت رویال بتل است و شما در بازی با 100 تن دیگر از بازیکنان به یک جزیره فرستاده می‌شوید و باید سعی کنید تا در این جزیره زنده بمانید، بازیکنی که موفق شده بیشتر از همه در بازی دوام بیاورد و کشته نشود برنده می‌شود و بازی جوایز ویژه‌ای به او می‌دهد. بازی دارای دو نقشه هست که یکی از این نقشه‌ها به‌تازگی به بازی اضافه شد،";
+}
+
+#site #main .intro-games .game3::before {
+    content: "داستان بازی ربط‌های کمی به نسخه‌های قبلی دارد اما چندین شخصیت معروف مانند Ryu Hayabusa در طول بازی حضور دارند و با شخصیت اصلی، Yaiba، تعامل‌های جالب و غافل‌گیر کننده‌ای دارند. دشمنان شما در بازی فقط زامبی‌ها نیستند و در بخش‌های مختلفی از داستان، شما باید با دشمنانی به غیر از زامبی‌ها مبارزه کنید که می‌توان به ربات‌های بزرگ و غول‌پیکر نیز اشاره کرد. ";
+}
+
+#site #main .intro-games .game4::before {
+    content: "World Of Warcraft یکی از بزرگترین بازی های چند نفره آنلاین در جهان می باشد که برای اولین بار در سال 2004 منتشر شد. در طی 16 سالی که از عرضه ی بازی وارکرفت می گذرد، این بازی همیشه در صدر پربازیکن ترین بازی های آنلاین قرار داشته است. بلیزارد نیز هر چند وقت یک بار با به روز رسانی بازی، قسمت های مختلف بازی را بهتر می کند، ویژگی های بازی را افزایش می دهد و تنور گرم این بازی را گرمتر می کند.";
+}
+
+#site #main .intro-games .game:hover::before {
+    top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    #site #main .intro-games .game::before {
+        padding: 10px;
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #site #main .intro-games .game::before {
+        padding: 40px 25px;
+        font-size: 1.25rem;
+        line-height: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #site #main .intro-games .game:not(:first-child) {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    #site #main .intro-games .game::before {
+        padding: 10px;
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+}
+
+/*end style for intro for games*/
+
+
+/*style for recent game*/
+#site #main .recent-games {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #eef2f6;
+    border-top: 1px solid #d6dee7;
+    border-bottom: 1px solid #d6dee7;
+    padding: 100px 0;
+    min-height: 790px;
+}
+
+#site #main .recent-games .recent-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: url("images/home-site/recent-game-bg.png") top center no-repeat;
+    background-size: cover;
+}
+
+#site #main .recent-games .recent-box .nav-recent-game {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 25px;
+    direction: ltr;
+    text-align: center;
+}
+
+#site #main .recent-games .recent-box .nav-recent-game ul li {
+    margin-right: 8px;
+}
+
+#site #main .recent-games .recent-box .nav-recent-game ul li a {
+    text-decoration: none;
+    padding: 8px 30px;
+    background: #a0a0a0;
+    color: #fff;
+}
+
+.active-recent-new {
+    background: #ff205f !important;
+}
+
+.active-recent-racing {
+    background: #694eae !important;
+}
+
+.active-recent-adventure {
+    background: #40abf5 !important;
+}
+
+#site #main .recent-games .recent-box .title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#site #main .recent-games .recent-box .box-recent-game {
+    margin-top: 10px;
+}
+
+#site #main .recent-games .recent-box .title h2 {
+    font-weight: 600;
+    font-family: dirooz-font, "Segoe UI", sans-serif;
+    font-size: 2.3rem;
+    line-height: 3.3rem;
+}
+
+#site #main .recent-games .recent-box .new-recent-game .box {
+    background: #fff;
+    border: 1px solid #d6dee7;
+    border-radius: 2px;
+    margin-top: 20px;
+    position: relative;
+}
+
+#site #main .recent-games .recent-box .new-recent-game .box .img {
+    position: relative;
+}
+
+#site #main .recent-games .recent-box .new-recent-game .box.box1 .img {
+    background: url("images/home-site/1-new-min.jpeg") top center no-repeat;
+    background-size: cover;
+    height: 204px;
+}
+
+#site #main .recent-games .recent-box .new-recent-game .box.box2 .img {
+    background: url("images/home-site/3-new-min.png") top center no-repeat;
+    background-size: cover;
+    height: 204px;
+}
+
+#site #main .recent-games .recent-box .new-recent-game .box.box3 .img {
+    background: url("images/home-site/2-new-min.jpg") top center no-repeat;
+    background-size: cover;
+    height: 204px;
+}
+
+#site #main .recent-games .recent-box .new-recent-game .box .img .new {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    padding: 3px 17px;
+    background: #ff205f;
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+#site #main .recent-games .recent-box .new-recent-game .box .text {
+    padding: 25px 15px 40px;
+}
+
+#site #main .recent-games .recent-box .new-recent-game .box .text h5 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#site #main .recent-games .recent-box .new-recent-game .box .text .star .box-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    background: #ffb320;
+    margin-right: 30px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+#site #main .recent-games .recent-box .new-recent-game .box .text .heart .box-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    background: #ff205f;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*end style for recent game*/
+
+
+/*end style for main*/

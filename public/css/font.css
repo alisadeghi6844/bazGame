@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'dirooz-font';
+    src: url("../fonts/Dirooz-FD.eot") format('eot'),
+    url("../fonts/Dirooz-FD.ttf") format('ttf'),
+    url("../fonts/Dirooz-FD.woff") format('woff');
+}
+
+@font-face {
+    font-family: IRANSans;
+    src: url("../fonts/IRAN Sans Regular (mmrostami.blog.ir).ttf") format('ttf'),
+    url("../fonts/IRANSans.eot") format('eot'),
+    url("../fonts/IRANSans.woff") format('woff');
+}
+
+@font-face {
+    font-family: pangolin;
+    src: url("../fonts/Pangolin-Regular.eot") format('eot'),
+    url("../fonts/Pangolin-Regular.ttf") format('ttf'),
+    url("../fonts/Pangolin-Regular.woff") format('woff');
+}
