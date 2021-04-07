@@ -19,7 +19,7 @@ const RecentGames = () => {
                                 <NavLink to="/racing" activeClassName="active-recent-racing">RACING</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/adventure" activeClassName="active-recent-adventure">ADVENTURE</NavLink>
+                                <NavLink to="/adventure" activeClassName="active-recent-adventure">Open world</NavLink>
                             </li>
                         </ul>
                     </nav>

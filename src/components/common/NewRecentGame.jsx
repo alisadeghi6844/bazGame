@@ -10,11 +10,12 @@ const NewRecentGame = () => {
                 <div className="col-lg-4">
                     <div className="box box1">
                         <div className="img">
-                            <div className="new">NEW</div>
+                            <div className="type new">NEW</div>
                         </div>
                         <div className="text">
-                            <h5>Star Wars: Jedi Fallen Order</h5>
-                            <p>در این قسمت بازیکنان با استفاده از تمرینات Jedi می توانند قدرت های جدیدی کسب کنند
+                            <h5>Call of Duty: Black Ops Cold War</h5>
+                            <p>استودیو اکتیویژن بازی ندای وظیفه: جنگ سرد بلک اپس را به صورت انحصاری در بتلنت و به صورت
+                                آنلاین منتشر کرده است
                                 و....</p>
                             <div className="star">
                                 <div className="box-img st">
@@ -32,12 +33,13 @@ const NewRecentGame = () => {
                 <div className="col-lg-4">
                     <div className="box box2">
                         <div className="img">
-                            <div className="new">NEW</div>
+                            <div className="type new">NEW</div>
                         </div>
                         <div className="text">
-                            <h5>Star Wars: Jedi Fallen Order</h5>
-                            <p>در این قسمت بازیکنان با استفاده از تمرینات Jedi می توانند قدرت های جدیدی کسب کنند
-                                و....</p>
+                            <h5>Assassin’s Creed Valhalla</h5>
+                            <p>داستان بازی در۸۷۳ میلادی و در زمان حملات وایکینگ‌ها به بریتانیا اتفاق می‌افتد. داستان و
+                                بسیاری از اتفاقات بازی در سرزمین‌های
+                                ....</p>
 
                             <div className="star">
                                 <div className="box-img st">
@@ -55,12 +57,13 @@ const NewRecentGame = () => {
                 <div className="col-lg-4">
                     <div className="box box3">
                         <div className="img">
-                            <div className="new">NEW</div>
+                            <div className="type new">NEW</div>
                         </div>
                         <div className="text">
-                            <h5>Star Wars: Jedi Fallen Order</h5>
-                            <p>در این قسمت بازیکنان با استفاده از تمرینات Jedi می توانند قدرت های جدیدی کسب کنند
-                                و....</p>
+                            <h5>Cyberpunk 2077</h5>
+                            <p>آینده‌ی بشری یکی از جنجال‌برانگیزترین بحث‌هایی است که هرروز میان اقشار مختلفی دنبال
+                                می‌شود. فیلم‌های هالیوودی همگی
+                                ....</p>
 
                             <div className="star">
                                 <div className="box-img st">

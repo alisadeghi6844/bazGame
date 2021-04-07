@@ -26,8 +26,8 @@ body {
 
 p {
     font-family: IRANSans, "Segoe UI", sans-serif;
-    font-size: 1.2222rem;
-    line-height: 1.7rem;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
     color: #525252;
 }
 
@@ -780,13 +780,16 @@ ul {
     bottom: 40px;
     right: 18px;
 }
-
+#site #main .intro-games .game .text h5{
+    padding: 0;
+    margin-bottom: 15px;
+}
 #site #main .intro-games .game .text h5 a {
     text-decoration: none;
-    color: #fff;
-    margin-bottom: 5px;
+    color: #ffb320;
     letter-spacing: 1px;
     font-size: 1.4rem;
+    padding: 0;
 }
 
 #site #main .intro-games .game .text p {
@@ -933,19 +936,18 @@ ul {
     font-size: 2.3rem;
     line-height: 3.3rem;
 }
-
 #site #main .recent-games .recent-box .new-recent-game .box {
     background: #fff;
     border: 1px solid #d6dee7;
     border-radius: 2px;
     margin-top: 20px;
     position: relative;
+    min-height: 415px;
 }
 
-#site #main .recent-games .recent-box .new-recent-game .box .img {
+#site #main .recent-games .recent-box .new-recent-game .box .img,.img-racing,.open-img {
     position: relative;
 }
-
 #site #main .recent-games .recent-box .new-recent-game .box.box1 .img {
     background: url("images/home-site/1-new-min.jpeg") top center no-repeat;
     background-size: cover;
@@ -964,16 +966,61 @@ ul {
     height: 204px;
 }
 
-#site #main .recent-games .recent-box .new-recent-game .box .img .new {
+
+#site #main .recent-games .recent-box .new-recent-game .box.box1 .racing-img {
+    background: url("images/home-site/header-min.jpg") top center no-repeat;
+    background-size: cover;
+    height: 204px;
+}
+
+#site #main .recent-games .recent-box .new-recent-game .box.box2 .racing-img {
+    background: url("images/home-site/header-2-min.jpg") top center no-repeat;
+    background-size: cover;
+    height: 204px;
+}
+
+#site #main .recent-games .recent-box .new-recent-game .box.box3 .racing-img {
+    background: url("images/home-site/header-3-min.jpg") top center no-repeat;
+    background-size: cover;
+    height: 204px;
+}
+
+#site #main .recent-games .recent-box .new-recent-game .box.box1 .open-img {
+    background: url("images/home-site/rdr2.jpg") top center no-repeat;
+    background-size: cover;
+    height: 204px;
+}
+
+#site #main .recent-games .recent-box .new-recent-game .box.box2 .open-img {
+    background: url("images/home-site/aco.jpg") top center no-repeat;
+    background-size: cover;
+    height: 204px;
+}
+
+#site #main .recent-games .recent-box .new-recent-game .box.box3 .open-img {
+    background: url("images/home-site/fc5.jpg") top center no-repeat;
+    background-size: cover;
+    height: 204px;
+}
+
+#site #main .recent-games .recent-box .new-recent-game .box  .type {
     position: absolute;
     left: 15px;
     top: 10px;
     padding: 3px 17px;
-    background: #ff205f;
     color: #fff;
     font-size: 0.9rem;
 }
 
+#site #main .recent-games .recent-box .new-recent-game .box  .new {
+    background: #ff205f;
+}
+#site #main .recent-games .recent-box .new-recent-game .box  .racing{
+    background: #694eae;
+}
+#site #main .recent-games .recent-box .new-recent-game .box  .open{
+    background: #40abf5;
+}
 #site #main .recent-games .recent-box .new-recent-game .box .text {
     padding: 25px 15px 40px;
 }
