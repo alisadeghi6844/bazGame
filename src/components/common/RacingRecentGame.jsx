@@ -8,7 +8,7 @@ const RacingRecentGame = () => {
                     <h2>بازی های اخیر</h2>
                 </div>
                 <div className="row">
-                    <div className="col-lg-4">
+                    <div className="col-lg-4 col-md-6">
                         <div className="box box1">
                             <div className="racing-img">
                                 <div className="type racing">RACING</div>
@@ -30,7 +30,7 @@ const RacingRecentGame = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4">
+                    <div className="col-lg-4 col-md-6">
                         <div className="box box2">
                             <div className="racing-img">
                                 <div className="type racing">RACING</div>
@@ -54,7 +54,7 @@ const RacingRecentGame = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4">
+                    <div className="col-lg-4 col-md-6">
                         <div className="box box3">
                             <div className="racing-img">
                                 <div className="type racing">RACING</div>

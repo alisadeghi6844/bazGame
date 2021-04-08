@@ -8,7 +8,7 @@ const AdventureRecentGame = () => {
                     <h2>بازی های اخیر</h2>
                 </div>
                 <div className="row">
-                    <div className="col-lg-4">
+                    <div className="col-lg-4 col-md-6">
                         <div className="box box1">
                             <div className="open-img">
                                 <div className="type open">Open world</div>
@@ -31,7 +31,7 @@ const AdventureRecentGame = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4">
+                    <div className="col-lg-4 col-md-6">
                         <div className="box box2">
                             <div className="open-img">
                                 <div className="type open">Open world</div>
@@ -54,7 +54,7 @@ const AdventureRecentGame = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4">
+                    <div className="col-lg-4 col-md-6">
                         <div className="box box3">
                             <div className="open-img">
                                 <div className="type open">Open world</div>
