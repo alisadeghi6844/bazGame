@@ -780,10 +780,12 @@ ul {
     bottom: 40px;
     right: 18px;
 }
-#site #main .intro-games .game .text h5{
+
+#site #main .intro-games .game .text h5 {
     padding: 0;
     margin-bottom: 15px;
 }
+
 #site #main .intro-games .game .text h5 a {
     text-decoration: none;
     color: #ffb320;
@@ -935,6 +937,7 @@ ul {
     font-size: 2.3rem;
     line-height: 3.3rem;
 }
+
 #site #main .recent-games .recent-box .new-recent-game .box {
     background: #fff;
     border: 1px solid #d6dee7;
@@ -945,9 +948,10 @@ ul {
     margin-bottom: 100px;
 }
 
-#site #main .recent-games .recent-box .new-recent-game .box .img,.img-racing,.open-img {
+#site #main .recent-games .recent-box .new-recent-game .box .img, .img-racing, .open-img {
     position: relative;
 }
+
 #site #main .recent-games .recent-box .new-recent-game .box.box1 .img {
     background: url("images/home-site/1-new-min.jpeg") top center no-repeat;
     background-size: cover;
@@ -1003,7 +1007,7 @@ ul {
     height: 204px;
 }
 
-#site #main .recent-games .recent-box .new-recent-game .box  .type {
+#site #main .recent-games .recent-box .new-recent-game .box .type {
     position: absolute;
     left: 15px;
     top: 10px;
@@ -1012,15 +1016,18 @@ ul {
     font-size: 0.9rem;
 }
 
-#site #main .recent-games .recent-box .new-recent-game .box  .new {
+#site #main .recent-games .recent-box .new-recent-game .box .new {
     background: #ff205f;
 }
-#site #main .recent-games .recent-box .new-recent-game .box  .racing{
+
+#site #main .recent-games .recent-box .new-recent-game .box .racing {
     background: #694eae;
 }
-#site #main .recent-games .recent-box .new-recent-game .box  .open{
+
+#site #main .recent-games .recent-box .new-recent-game .box .open {
     background: #40abf5;
 }
+
 #site #main .recent-games .recent-box .new-recent-game .box .text {
     padding: 25px 15px 40px;
 }
@@ -1057,32 +1064,111 @@ ul {
     align-items: center;
 }
 
-@media screen and (max-width: 992px){
-    #site #main .recent-games .recent-box .new-recent-game .box{
+@media screen and (max-width: 992px) {
+    #site #main .recent-games .recent-box .new-recent-game .box {
         min-height: 442px;
         margin-bottom: 10px;
     }
-    #site #main .recent-games .recent-box .new-recent-game .box.box3{
+
+    #site #main .recent-games .recent-box .new-recent-game .box.box3 {
         margin-bottom: 90px;
     }
 }
-@media screen and (max-width: 437px){
+
+@media screen and (max-width: 437px) {
     #site #main .recent-games .recent-box .title h2 {
         font-size: 2rem;
         line-height: 3rem;
     }
-    #site #main .recent-games .recent-box .nav-recent-game ul li{
+
+    #site #main .recent-games .recent-box .nav-recent-game ul li {
         display: block;
         margin-top: 20px;
     }
-    #site #main .recent-games .recent-box .new-recent-game .box{
+
+    #site #main .recent-games .recent-box .new-recent-game .box {
         margin-top: 10px;
     }
+
     #site #main .recent-games .recent-box .nav-recent-game {
         padding: 70px 0 10px;
     }
 }
+
 /*end style for recent game*/
+
+
+/*style for introduction game*/
+#site #main .introduction-game {
+    margin-top: -7px;
+    position: relative;
+    background: url("images/home-site/pattern-min.png") top center;
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#site #main .introduction-game .introduction-game-box .first-intro .box {
+    background: #252525;
+    min-height: 290px;
+    position: relative;
+    padding: 60px 40px 30px;
+    width: 100%;
+    height: 100%;
+}
+
+#site #main .introduction-game .introduction-game-box .first-intro .box .img {
+    min-height: 210px;
+    max-height: 100%;
+    width: 200px;
+}
+
+#site #main .introduction-game .introduction-game-box .first-intro .box .warcraft {
+    background: url("images/home-site/first-intro-min.jpg") top center no-repeat;
+    background-size: cover;
+}
+
+#site #main .introduction-game .introduction-game-box .first-intro .box .doom {
+    background: url("images/home-site/two-intro-min.jpg") top center no-repeat;
+    background-size: cover;
+}
+#site #main .introduction-game .introduction-game-box .first-intro .box .premium-tournament{
+    position: absolute;
+    background: #ffb320;
+    font-size: 0.8rem;
+    font-weight: 600;
+    top: 0;
+    right: 0;
+    padding: 8px 21px;
+    color: #131313;
+}
+#site #main .introduction-game .introduction-game-box .first-intro .box .text{
+    padding-right: 30px;
+}
+#site #main .introduction-game .introduction-game-box .first-intro .box .text h4{
+    color: #ffb320;
+    font-size: 1.35rem;
+    font-weight: 600;
+    font-family: pangolin, "Segoe UI", sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+#site #main .introduction-game .introduction-game-box .first-intro .box .text .ul-box ul li:not(:first-child){
+    margin-top: -13px;
+}
+#site #main .introduction-game .introduction-game-box .first-intro .box .text .ul-box ul li p{
+    font-size: 0.9rem;
+    font-family: dirooz-font, "Segoe UI", sans-serif;
+    color: #9a9a9a;
+}
+#site #main .introduction-game .introduction-game-box .first-intro .box .text .ul-box ul li p span{
+    color: #fff;
+}
+#site #main .introduction-game .introduction-game-box .first-intro .box .text .ul-box ul li p span.plat{
+    color: #ffb320;
+}
+/*end style for introduction game*/
 
 
 /*end style for main*/
