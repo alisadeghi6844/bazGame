@@ -5,7 +5,7 @@ const RacingRecentGame = () => {
         <div>
             <section className="new-recent-game">
                 <div className="title">
-                    <h2>بازی های اخیر</h2>
+                    <h2>بازی های ریسینگ</h2>
                 </div>
                 <div className="row">
                     <div className="col-lg-4 col-md-6">

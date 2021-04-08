@@ -5,7 +5,7 @@ const AdventureRecentGame = () => {
         <div>
             <section className="new-recent-game">
                 <div className="title">
-                    <h2>بازی های اخیر</h2>
+                    <h2>بازی های جهان باز</h2>
                 </div>
                 <div className="row">
                     <div className="col-lg-4 col-md-6">
@@ -61,7 +61,8 @@ const AdventureRecentGame = () => {
                             </div>
                             <div className="text">
                                 <h5>Far Cry 5</h5>
-                                <p>داستان این بازی حول فرقه‌ی آخرالزمانی‌ خشن و افسار گسیخته‌ای می‌چرخد. برخلاف بازی‌های پیشین سری....</p>
+                                <p>داستان این بازی حول فرقه‌ی آخرالزمانی‌ خشن و افسار گسیخته‌ای می‌چرخد. برخلاف بازی‌های
+                                    پیشین سری....</p>
 
                                 <div className="star">
                                     <div className="box-img st">

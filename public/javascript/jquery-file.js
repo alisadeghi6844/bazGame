@@ -76,4 +76,30 @@ $(document).ready(function () {
     });
     /*end animate for top slider*/
 
+
+    /*responsive recentGame*/
+    let ulRecent = $("#site #main .recent-games .recent-box .nav-recent-game ul");
+
+    $(window).resize(function () {
+        if ($(window).width() < 420) {
+            if (ulRecent.hasClass("nav")) {
+                ulRecent.removeClass("nav");
+            }
+        } else {
+            if (!ulRecent.hasClass("nav")) {
+                ulRecent.addClass("nav");
+            }
+        }
+    });
+    if ($(window).width() < 420) {
+        if (ulRecent.hasClass("nav")) {
+            ulRecent.removeClass("nav");
+        }
+    } else {
+        if (!ulRecent.hasClass("nav")) {
+            ulRecent.addClass("nav");
+        }
+    }
+    /*end responsive recentGame*/
+
 });
