@@ -8,7 +8,7 @@ const IntroductionGame = () => {
                     <div className="first-intro">
                         <div className="container">
                             <div className="row">
-                                <div className="col-lg-6">
+                                <div className="col-md-6">
                                     <div className="box">
                                         <div className="premium-tournament">
                                             PREMIUM TOURNAMENT
@@ -43,8 +43,8 @@ const IntroductionGame = () => {
                                     </div>
                                 </div>
 
-                                <div className="col-lg-6">
-                                    <div className="box">
+                                <div className="col-md-6">
+                                    <div className="box last">
                                         <div className="premium-tournament">
                                             PREMIUM TOURNAMENT
                                         </div>

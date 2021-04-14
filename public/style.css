@@ -1133,7 +1133,8 @@ ul {
     background: url("images/home-site/two-intro-min.jpg") top center no-repeat;
     background-size: cover;
 }
-#site #main .introduction-game .introduction-game-box .first-intro .box .premium-tournament{
+
+#site #main .introduction-game .introduction-game-box .first-intro .box .premium-tournament {
     position: absolute;
     background: #ffb320;
     font-size: 0.8rem;
@@ -1143,10 +1144,12 @@ ul {
     padding: 8px 21px;
     color: #131313;
 }
-#site #main .introduction-game .introduction-game-box .first-intro .box .text{
+
+#site #main .introduction-game .introduction-game-box .first-intro .box .text {
     padding-right: 30px;
 }
-#site #main .introduction-game .introduction-game-box .first-intro .box .text h4{
+
+#site #main .introduction-game .introduction-game-box .first-intro .box .text h4 {
     color: #ffb320;
     font-size: 1.35rem;
     font-weight: 600;
@@ -1154,19 +1157,60 @@ ul {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
-#site #main .introduction-game .introduction-game-box .first-intro .box .text .ul-box ul li:not(:first-child){
+
+#site #main .introduction-game .introduction-game-box .first-intro .box .text .ul-box ul li:not(:first-child) {
     margin-top: -13px;
 }
-#site #main .introduction-game .introduction-game-box .first-intro .box .text .ul-box ul li p{
+
+#site #main .introduction-game .introduction-game-box .first-intro .box .text .ul-box ul li p {
     font-size: 0.9rem;
     font-family: dirooz-font, "Segoe UI", sans-serif;
     color: #9a9a9a;
 }
-#site #main .introduction-game .introduction-game-box .first-intro .box .text .ul-box ul li p span{
+
+#site #main .introduction-game .introduction-game-box .first-intro .box .text .ul-box ul li p span {
     color: #fff;
 }
-#site #main .introduction-game .introduction-game-box .first-intro .box .text .ul-box ul li p span.plat{
+
+#site #main .introduction-game .introduction-game-box .first-intro .box .text .ul-box ul li p span.plat {
     color: #ffb320;
+}
+
+@media screen and (max-width: 1400px) {
+    #site #main .introduction-game .introduction-game-box .first-intro .box .text {
+        padding-right: 20px;
+    }
+
+    #site #main .introduction-game .introduction-game-box .first-intro .box .img {
+        min-height: 180px;
+        width: 170px;
+    }
+
+    #site #main .introduction-game .introduction-game-box .first-intro .box {
+        padding: 60px 20px 30px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #site #main .introduction-game .introduction-game-box .first-intro .box .img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 15px;
+    }
+    #site #main .introduction-game .introduction-game-box .first-intro .box .doom {
+        background: url("images/home-site/two-intro-min.jpg") center center no-repeat;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #site #main .introduction-game .introduction-game-box .first-intro .box.last{
+        margin-top: 25px;
+    }
+}
+@media screen and (max-width: 360px) {
+    #site #main .introduction-game .introduction-game-box .first-intro .box {
+        padding: 50px 10px 20px;
+    }
 }
 /*end style for introduction game*/
 
