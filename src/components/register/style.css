@@ -1,0 +1,144 @@
+.register {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url("./image/body-bg-min.jpg") top center no-repeat;
+    background-size: cover;
+    padding: 150px 0;
+}
+
+.register .img-register {
+    text-align: left;
+}
+
+.register .img-register .img {
+    position: relative;
+}
+
+.register .img-register .form {
+    position: absolute;
+    top: 135px;
+    right: 135px;
+    background: rgba(177, 135, 77, 0.75);
+    height: 66.7%;
+    width: 45%;
+    direction: rtl;
+    text-align: right;
+    padding: 20px 80px 36px 55px;
+}
+
+.register .img-register .form h2 {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+
+.register .img-register .form p {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 7px;
+}
+
+.register .img-register .form p a {
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+.register .img-register .form p a:hover {
+    color: #0a53be;
+}
+
+.register .img-register .form .inputs input {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #fff;
+    margin-top: 20px;
+    outline: none !important;
+    color: #fff;
+    width: 100%;
+    padding: 5px;
+}
+
+.register .img-register .form .inputs input::placeholder {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+.register .img-register .form .password {
+    position: relative;
+}
+
+.register .img-register .form .password .eye-show-hidden-password {
+    position: absolute;
+    top: 30px;
+    left: 8px;
+}
+
+.register .img-register .form .password .eye-show-hidden-password i {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.register .img-register .form .check-box{
+    margin-top: 20px;
+    direction: ltr;
+}
+.register .img-register .form .check-box input{
+    margin-left: 10px;
+}
+.register .img-register .form .check-box label{
+    color: #fff;
+}
+.register .img-register .form .check-box label a{
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+.register .img-register .form .check-box label a:hover{
+    color: #0a53be;
+}
+.register .img-register .form .buttons{
+    margin-top: 20px;
+}
+.register .img-register .form .buttons button{
+    padding: 8px 42px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: dirooz-font, "Segoe UI", sans-serif;
+    outline: none;
+    border: none;
+}
+.register .img-register .form .buttons button.login-button{
+    background: transparent;
+    border: 2px solid #fff;
+    transition: all 0.2s;
+    margin-right: 20px;
+}
+.register .img-register .form .buttons button.login-button a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: dirooz-font, "Segoe UI", sans-serif;
+}
+.register .img-register .form .buttons button.login-button:hover{
+    background: #fff;
+}
+.register .img-register .form .buttons button.login-button:hover a{
+    color: #937143;
+}
+.register .img-register .form .buttons button.register-button{
+    background: #fff;
+    color: #937143;
+    transition: all 0.2s;
+    padding: 8px 37px;
+    border: 2px solid transparent;
+    box-shadow: 0px 15px 9.9px 0.1px rgba(0,0,0,0.15);
+}
+.register .img-register .form .buttons button.register-button:hover{
+    background: #d5d5d5;
+}

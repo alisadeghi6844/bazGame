@@ -3,8 +3,11 @@ import LoadSite from "../common/LoadSite";
 import Header from "../Header";
 import TopSlider from "../TopSlider";
 import NewsBox from "../NewsBox";
+import Footer from "../footer/Footer";
+import {withRouter} from "react-router";
 
 const Layout = (props) => {
+    const {pathname} = props.location;
     return (
         <div>
             <div id="site">
@@ -19,13 +22,14 @@ const Layout = (props) => {
 
                 {/*main*/}
                 <main id="main">
-                    <TopSlider/>
+                    {pathname==="/"||pathname==="/racing"||pathname==="/adventure"?<TopSlider/>:null}
                     <NewsBox/>
                     {props.children}
                 </main>
                 {/*end main*/}
+                <Footer/>
             </div>
         </div>
     );
 }
-export default Layout;
+export default withRouter(Layout);

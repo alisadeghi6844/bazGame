@@ -150,7 +150,14 @@ ul {
     padding: 7px 20px;
     font-weight: 500;
 }
-
+#site #header .header-box .button-box .button button a{
+    text-decoration: none;
+    color: #323232;
+    transition: all 0.3s;
+}
+#site #header .header-box .button-box .button button a:hover{
+    color: #fff;
+}
 #site #header .header-box .nav-box .nav-top-menu ul li:not(:first-child) {
     margin-right: 25px;
 }
@@ -1197,22 +1204,138 @@ ul {
         height: 100%;
         margin-bottom: 15px;
     }
+
     #site #main .introduction-game .introduction-game-box .first-intro .box .doom {
         background: url("images/home-site/two-intro-min.jpg") center center no-repeat;
     }
 }
 
 @media screen and (max-width: 768px) {
-    #site #main .introduction-game .introduction-game-box .first-intro .box.last{
+    #site #main .introduction-game .introduction-game-box .first-intro .box.last {
         margin-top: 25px;
     }
 }
+
 @media screen and (max-width: 360px) {
     #site #main .introduction-game .introduction-game-box .first-intro .box {
         padding: 50px 10px 20px;
     }
 }
+
 /*end style for introduction game*/
 
+/*style for recentReviews*/
+#site #main .recent-reviews {
+    position: relative;
+    padding: 100px 0 70px;
+    background: url("images/home-site/review-bg-min.png") top center no-repeat;
+    background-size: cover;
+}
+
+#site #main .recent-reviews .title {
+    text-align: center;
+}
+
+#site #main .recent-reviews .title span {
+    padding: 5px 20px;
+    display: inline-block;
+    color: #fff;
+    font-size: 1rem;
+    background: #ff205f;
+    margin-bottom: 10px;
+}
+
+#site #main .recent-reviews .title h2 {
+    font-weight: 600;
+    font-family: dirooz-font, "Segoe UI", sans-serif;
+    font-size: 2.3rem;
+    line-height: 3.3rem;
+}
+
+#site #main .recent-reviews .boxes {
+    padding: 25px 30px;
+}
+#site #main .recent-reviews .boxes .box{
+    position: relative;
+    margin-top: 40px;
+}
+#site #main .recent-reviews .boxes .box .img{
+    width: 100%;
+    height: 345px;
+    margin-bottom: 20px;
+}
+#site #main .recent-reviews .boxes .box1 .img {
+    background: url("images/home-site/1-1-min.jpg") top center no-repeat;
+    background-size: cover;
+}
+#site #main .recent-reviews .boxes .box2 .img {
+    background: url("images/home-site/2-2-min.jpg") top center no-repeat;
+    background-size: cover;
+}
+#site #main .recent-reviews .boxes .box3 .img {
+    background: url("images/home-site/3-3-min.jpg") top center no-repeat;
+    background-size: cover;
+}
+#site #main .recent-reviews .boxes .box4 .img {
+    background: url("images/home-site/4-4-min.jpg") top center no-repeat;
+    background-size: cover;
+}
+#site #main .recent-reviews .boxes .box .text{
+    text-align: center;
+}
+#site #main .recent-reviews .boxes .box .text h5{
+    font-weight: 600;
+}
+#site #main .recent-reviews .boxes .box .text p{
+    font-size: 1.05rem;
+}
+#site #main .recent-reviews .boxes .box .rate-game{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -30px;
+    left: 25px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+#site #main .recent-reviews .boxes .box .rate-game.game1{
+    background: #ffb320;
+}
+#site #main .recent-reviews .boxes .box .rate-game.game2{
+    background: #694eae;
+}
+#site #main .recent-reviews .boxes .box .rate-game.game3{
+    background: #4eae60;
+}
+#site #main .recent-reviews .boxes .box .rate-game.game4{
+    background: #ff20ae;
+}
+@media screen and (max-width: 437px) {
+    #site #main .recent-reviews .title h2 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+}
+.active-page{
+    color: #ffb320 !important;
+}
+.loadingPage{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: #ffb320;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*end style for recentReviews*/
 
 /*end style for main*/
