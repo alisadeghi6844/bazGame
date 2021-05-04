@@ -22,7 +22,7 @@ const Register = ({history}) => {
             email: "ایمیل وارد شده معتبر نمی باشد",
             min: "تعداد کاراکتر وارد شده کمتر از 5 می باشد"
         },
-        element: message => <div style={{color: "red"}}>{message}</div>
+        element: message => <div className="errorValidator">{message}</div>
     }));
     const reset = () => {
         setFullname("");
@@ -150,7 +150,7 @@ const Register = ({history}) => {
                                     </div>
                                     <div className="buttons">
                                         <button className="register-button" type="submit">عضویت</button>
-                                        <button className="login-button" type="button"><a href="#">ورود</a></button>
+                                        <NavLink to="/login"><button className="login-button" type="button">ورود</button></NavLink>
                                     </div>
                                 </form>
                             </div>
